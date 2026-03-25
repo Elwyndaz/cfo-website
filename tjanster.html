@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tjänster – Centrum för Organisationsutveckling</title>
+<title>Utbildningar i Umeå – Excel, BAM & Ledarskap | Centrum för Organisationsutveckling</title>
+<meta name="description" content="Vi erbjuder Excel-utbildning i Umeå, BAM-utbildning (Bättre Arbetsmiljö) och ledarskapsutbildning. Verksamhetsanpassad utbildning med högt deltagaromdöme.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -19,7 +20,6 @@ ul{list-style:none}
 .sidebar-top{display:flex;flex-direction:column;gap:2em}
 .site-title{font-size:var(--fs-h5);font-weight:700;letter-spacing:var(--ls-heading);line-height:1.2;text-decoration:none;color:var(--fg);transition:color var(--t)}
 .site-title:hover{color:var(--primary)}
-.site-title-abbr{display:block;font-size:var(--fs-small);font-weight:500;color:var(--secondary);letter-spacing:.04em;margin-top:.25em}
 .sidebar-nav{display:flex;flex-direction:column;gap:.3em}
 .sidebar-nav a{font-size:var(--fs-large);font-weight:400;text-decoration:none;color:var(--fg);transition:color var(--t);line-height:1.4}
 .sidebar-nav a:hover,.sidebar-nav a.active{color:var(--primary)}
@@ -28,14 +28,10 @@ ul{list-style:none}
 .sidebar-social a:hover{opacity:1}
 .sidebar-social svg{width:20px;height:20px;fill:currentColor}
 .content{display:flex;flex-direction:column;gap:clamp(3.5rem,7vw,6rem);max-width:760px}
-
-/* Page header */
 .page-header{padding-top:clamp(3rem,8vw,7rem)}
 .page-eyebrow{font-size:var(--fs-body);color:var(--secondary);margin-bottom:.6em;opacity:0;animation:fadeUp .5s ease .1s forwards}
 .page-title{font-size:var(--fs-hero);font-weight:800;line-height:var(--lh-heading);letter-spacing:var(--ls-heading);opacity:0;animation:fadeUp .6s ease .2s forwards}
-.page-intro{margin-top:1.25em;font-size:var(--fs-large);color:var(--secondary);line-height:var(--lh-body);max-width:580px;opacity:0;animation:fadeUp .6s ease .3s forwards}
-
-/* Service list */
+.page-intro{margin-top:1.25em;font-size:var(--fs-large);color:var(--secondary);max-width:580px;opacity:0;animation:fadeUp .6s ease .3s forwards}
 .services{display:flex;flex-direction:column;gap:0;opacity:0;animation:fadeUp .6s ease .4s forwards}
 .service-item{display:grid;grid-template-columns:1fr auto;align-items:start;gap:1.5rem;padding:2rem 0;border-top:1px solid var(--tertiary)}
 .service-item:last-child{border-bottom:1px solid var(--tertiary)}
@@ -45,26 +41,20 @@ ul{list-style:none}
 .service-desc{font-size:var(--fs-body);color:var(--secondary);line-height:var(--lh-body)}
 .service-icon{width:48px;height:48px;border-radius:50%;background:var(--quaternary);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.25rem}
 .service-icon svg{width:22px;height:22px;fill:var(--primary)}
-
-/* CTA */
 .cta-box{background:var(--quaternary);border-radius:12px;padding:clamp(1.5rem,4vw,2.5rem);display:flex;flex-direction:column;gap:1rem;opacity:0;animation:fadeUp .6s ease .5s forwards}
 .cta-box h2{font-size:1.6rem;font-weight:800;letter-spacing:var(--ls-heading);line-height:var(--lh-heading)}
 .cta-box p{color:var(--secondary);max-width:460px}
-.btn{display:inline-block;padding:.65em 1.6em;border-radius:var(--radius-btn);font-size:var(--fs-body);font-weight:600;text-decoration:none;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);letter-spacing:.01em;font-family:var(--font);border:none}
+.btn{display:inline-block;padding:.65em 1.6em;border-radius:var(--radius-btn);font-size:var(--fs-body);font-weight:600;text-decoration:none;transition:transform var(--t),box-shadow var(--t);letter-spacing:.01em;font-family:var(--font);border:none;cursor:pointer}
 .btn:hover{transform:translateY(-1px)}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-primary:hover{box-shadow:0 4px 20px rgba(16,90,254,.3)}
-
-/* Footer */
 .site-footer{padding-top:clamp(2rem,4vw,3.5rem);border-top:1px solid var(--tertiary);display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5em;font-size:var(--fs-small);color:var(--secondary);margin-top:auto}
 .footer-left{display:flex;gap:.5em;font-weight:700;color:var(--fg)}
 .footer-left span{font-weight:400;color:var(--secondary)}
 .footer-right a{color:var(--secondary);text-decoration:none}
 .footer-right a:hover{color:var(--primary)}
-
-/* Mobile */
 .mobile-header{display:none;justify-content:space-between;align-items:center;padding:1rem var(--outer);border-bottom:1px solid var(--tertiary);position:sticky;top:0;background:var(--bg);z-index:100}
-.mobile-title{font-size:1rem;font-weight:700;text-decoration:none;color:var(--fg)}
+.mobile-title{font-size:.9rem;font-weight:700;text-decoration:none;color:var(--fg)}
 .mobile-menu-btn{background:none;border:none;cursor:pointer;padding:.25rem;color:var(--fg);display:flex;flex-direction:column;gap:5px}
 .mobile-menu-btn span{display:block;width:22px;height:2px;background:currentColor}
 .mobile-nav{display:none;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--tertiary);padding:1.5rem var(--outer) 2rem;gap:.4em}
@@ -77,92 +67,74 @@ ul{list-style:none}
 </head>
 <body>
 <header class="mobile-header">
-  <a href="index.html" class="mobile-title">CfO</a>
+  <a href="index.html" class="mobile-title">Centrum för Organisationsutveckling</a>
   <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Öppna meny"><span></span><span></span><span></span></button>
 </header>
 <nav class="mobile-nav" id="mobileNav">
   <a href="index.html">Om oss</a>
   <a href="tjanster.html">Tjänster</a>
-  <a href="case.html">Case</a>
+  <a href="case.html">Utvärderingar</a>
   <a href="kontakt.html">Kontakt</a>
 </nav>
-
 <div class="site">
   <aside class="sidebar">
     <div class="sidebar-top">
-      <a href="index.html" class="site-title">Centrum för<br>Organisations&shy;utveckling<span class="site-title-abbr">CfO</span></a>
+      <a href="index.html" class="site-title">Centrum för<br>Organisations&shy;utveckling</a>
       <nav class="sidebar-nav">
         <a href="index.html">Om oss</a>
         <a href="tjanster.html" class="active">Tjänster</a>
-        <a href="case.html">Case</a>
+        <a href="case.html">Utvärderingar</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
     </div>
     <div class="sidebar-social">
-      <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-      <a href="mailto:info@cfo.se" aria-label="E-post"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+      <a href="https://www.linkedin.com/in/patrik-l%C3%B6fgren/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      <a href="mailto:patz.lofgren@gmail.com" aria-label="E-post"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
     </div>
   </aside>
-
   <main class="content">
     <div class="page-header">
-      <p class="page-eyebrow">Vad vi gör</p>
-      <h1 class="page-title">Tjänster</h1>
-      <p class="page-intro">Vi erbjuder ett brett utbud av insatser inom organisationsutveckling — anpassade efter era behov och förutsättningar.</p>
+      <p class="page-eyebrow">Utbildning i Umeå</p>
+      <h1 class="page-title">Utbildningar</h1>
+      <p class="page-intro">Vi erbjuder Excel-utbildning, BAM-utbildning och ledarskapsutbildning i Umeå — alltid verksamhetsanpassad och med ett evidensbaserat förhållningssätt.</p>
     </div>
-
     <div class="services">
       <div class="service-item">
         <div class="service-body">
           <span class="service-number">01</span>
-          <h2 class="service-title">Ledarskapsutveckling</h2>
-          <p class="service-desc">Vi stärker chefer och ledare på alla nivåer — från nya ledare som hittar sin roll till erfarna chefer som vill ta nästa steg. Genom individuell coaching, gruppprogram och processtöd skapar vi förutsättningar för ett ledarskap som engagerar och levererar.</p>
-        </div>
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
-      </div>
-
-      <div class="service-item">
-        <div class="service-body">
-          <span class="service-number">02</span>
-          <h2 class="service-title">Organisationsanalys</h2>
-          <p class="service-desc">Innan vi agerar förstår vi. Vi genomför grundliga analyser av era strukturer, processer och kultur — och identifierar var de verkliga flaskhalsarna finns. Resultatet är konkreta insikter och en tydlig bild av vad som behöver förändras.</p>
+          <h2 class="service-title">Excel-utbildning i Umeå</h2>
+          <p class="service-desc">Vi erbjuder Excel-utbildning i Umeå anpassad efter er verksamhet och era faktiska arbetsfiler. Oavsett om deltagarna är nybörjare eller vill fördjupa sina kunskaper utgår vi alltid från er vardag. Utbildningen ger praktiska verktyg som deltagarna kan börja använda direkt — och våra utvärderingar visar genomgående höga betyg. Passar både enskilda deltagare och grupper.</p>
         </div>
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
       </div>
-
+      <div class="service-item">
+        <div class="service-body">
+          <span class="service-number">02</span>
+          <h2 class="service-title">BAM-utbildning — Bättre Arbetsmiljö</h2>
+          <p class="service-desc">BAM (Bättre Arbetsmiljö) är en grundutbildning i arbetsmiljö framtagen av Prevent. Utbildningen ger chefer och skyddsombud grundläggande kunskaper för att kunna samverka i arbetsmiljöfrågor, undersöka och förebygga risker samt förstå hur en god arbetsmiljö bidrar till verksamheten. Vi håller BAM-utbildning i Umeå, både som lärarledd kurs och anpassad för er organisation.</p>
+        </div>
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+      </div>
       <div class="service-item">
         <div class="service-body">
           <span class="service-number">03</span>
-          <h2 class="service-title">Förändringsledning</h2>
-          <p class="service-desc">Förändring är svårt — men det behöver inte vara kaotiskt. Vi hjälper er att planera, kommunicera och genomföra förändringar på ett sätt som skapar delaktighet och minskar motstånd. Vi finns med genom hela resan.</p>
+          <h2 class="service-title">Ledarskapsutbildning</h2>
+          <p class="service-desc">Vi erbjuder ledarskapsutbildning för chefer och ledare i Umeå och Västerbotten — från nya ledare som hittar sin roll till erfarna chefer som vill ta nästa steg. Med grund i psykologisk kunskap om mänskligt beteende skapar vi förutsättningar för ett ledarskap som engagerar, skapar trygghet och levererar resultat.</p>
         </div>
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></div>
-      </div>
-
-      <div class="service-item">
-        <div class="service-body">
-          <span class="service-number">04</span>
-          <h2 class="service-title">Teamutveckling</h2>
-          <p class="service-desc">Högpresterande team byggs inte av sig självt. Vi arbetar med team på olika nivåer för att förbättra samarbete, kommunikation och tillit — och skapar gemensamma arbetssätt som håller över tid.</p>
-        </div>
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg></div>
       </div>
     </div>
-
     <div class="cta-box">
-      <h2>Redo att ta nästa steg?</h2>
-      <p>Hör av dig så berättar vi mer om hur vi kan hjälpa just er organisation.</p>
-      <div><a href="kontakt.html" class="btn btn-primary">Kontakta oss</a></div>
+      <h2>Intresserad av Excel-utbildning i Umeå?</h2>
+      <p>Hör av dig så berättar vi mer om hur vi anpassar utbildningen efter er verksamhet — och sätter ihop ett upplägg som passar er grupp.</p>
+      <div><a href="kontakt.html" class="btn btn-primary">Boka utbildning</a></div>
     </div>
-
     <footer class="site-footer">
       <div class="footer-left">© 2024 <span>Centrum för Organisationsutveckling</span></div>
-      <div class="footer-right"><a href="mailto:info@cfo.se">info@cfo.se</a></div>
+      <div class="footer-right"><a href="mailto:patz.lofgren@gmail.com">patz.lofgren@gmail.com</a></div>
     </footer>
   </main>
 </div>
-<script>
-function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}
-</script>
+<script>function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}</script>
 </body>
 </html>
