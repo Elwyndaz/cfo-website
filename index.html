@@ -117,7 +117,7 @@ ul{list-style:none}
     <section class="intro">
       <div class="intro-image"><span class="intro-image-label">Centrum för Organisationsutveckling</span></div>
       <div class="intro-body">
-        <p>Centrum för Organisationsutveckling erbjuder Excel-utbildning i Umeå — verksamhetsanpassad och med högt betyg från deltagarna. Vi håller även BAM-utbildning (Bättre Arbetsmiljö) och ledarskapsutbildning för organisationer i Umeå och Västernorrland.</p>
+        <p>Centrum för Organisationsutveckling erbjuder Excel-utbildning i Umeå — verksamhetsanpassad och med högt betyg från deltagarna. Vi håller även BAM-utbildning (Bättre Arbetsmiljö) och ledarskapsutbildning för organisationer i Umeå och Västerbotten.</p>
         <p>Vi tror på att hållbar förändring och lärande sker inifrån med hjälp av psykologiskt kunnande. Vårt arbete bygger på gedigen erfarenhet, evidensbaserat förhållningssätt och ett genuint engagemang för de människors beteende och de verksamheter vi möter. Vi lyssnar innan vi agerar — och anpassar alltid utbildningen utifrån er verksamhet.</p>
       </div>
     </section>
@@ -135,6 +135,18 @@ ul{list-style:none}
     </footer>
   </main>
 </div>
-<script>function toggleMenu(){document.getElementById('mobileNav').classList.toggle('open')}</script>
+<script>
+function toggleMenu(){
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('#mobileNav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobileNav').classList.remove('open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+});
+</script>
 </body>
 </html>
