@@ -139,5 +139,15 @@ ul{list-style:none}
     </footer>
   </main>
 </div>
+<script>
+function toggleMenu(){
+  var nav = document.getElementById('mobileNav');
+  var isOpening = !nav.classList.contains('open');
+  nav.classList.toggle('open');
+  if (isOpening) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+</script>
 </body>
 </html>
