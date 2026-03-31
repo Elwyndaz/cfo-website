@@ -128,7 +128,7 @@ ul{list-style:none}
     </section>
     <footer class="site-footer">
       <div class="footer-left">© 2024 <span>Centrum för Organisationsutveckling</span></div>
-      <div class="footer-right"><a href="mailto:patz.lofgren@gmail.com">patz.lofgren@gmail.com</a></div>
+      <div class="footer-right"><span id="footer-email"></span></div>
     </footer>
   </main>
 </div>
@@ -141,6 +141,10 @@ function toggleMenu(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
+
+var u='patz.lofgren';var d='gmail.com';
+var el=document.getElementById('footer-email');
+if(el){var a=document.createElement('a');a.href='mai'+'lto:'+u+'@'+d;a.textContent=u+'@'+d;a.style.color='inherit';el.appendChild(a);}
 </script>
 </body>
 </html>
